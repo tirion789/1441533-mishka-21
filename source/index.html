@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/85x34">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visyally-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина:пока пустая</a></li>
+        </ul>
+        <ul>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Новый поступления</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Распрадажа</a></li>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visyally-hidden">Магазин мягких игрушек "Мишка"</h1>
+    <section class="content-things">
+      <h2 class="visyally-hidden">Основные разделы</h2>
+        <p class="content-things__text">Милые штучки ручной работы для дома</p>
+      <ul class="content-things__list">
+        <li class="content-things__item">
+          <a href="#" class="content-things__link content-things__link--interior">
+            <span>Предметы интерьера</span>
+          </a>
+        </li>
+        <li class="content-things__item">
+          <a href="#" class="content-things__link contect-things__link--toys">
+            <span>Детские игрушки</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
 </html>
