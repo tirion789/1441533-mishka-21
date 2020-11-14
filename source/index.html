@@ -13,46 +13,46 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
-        <span class="visyally-hidden">
+        <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list-unstyled">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
               Каталог товаров
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
               Вязание на заказ
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list list-unstyled">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+        <ul class="main-navigation__list user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">
               Поиск по сайту
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">
               Корзина:пока пустая
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list news-list list-unstyled">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+        <ul class="main-navigation__list news-list">
+          <li class="news-list__item">
+            <a href="#" class="news-list__link">
               Новый поступления
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+          <li class="news-list__item">
+            <a href="#" class="news-list__link">
               Распрадажа</a>
           </li>
-          <p class="main-nav__text">
+          <p class="news-list__text">
             Бесплатная доставка по России
           </p>
         </ul>
@@ -60,19 +60,19 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visyally-hidden">Магазин мягких игрушек "Мишка"</h1>
-    <section class="content-things">
-      <div class="content_things__wrapper">
-        <h2 class="visyally-hidden">Основные разделы</h2>
-        <p class="content-things__text">Милые штучки ручной работы для дома</p>
-        <ul class="content-things__list list-unstyled">
-          <li class="content-things__item">
-            <a href="#" class="content-things__link content-things__link--interior">
+    <h1 class="visually-hidden">Магазин мягких игрушек "Мишка"</h1>
+    <section class="intro">
+      <div class="intro__wrapper">
+        <h2 class="visually-hidden">Основные разделы</h2>
+        <h2 class="intro__title">Милые штучки ручной работы для дома</h2>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <a href="#" class="intro__link intro__link--interior">
               <span>Предметы интерьера</span>
             </a>
           </li>
-          <li class="content-things__item">
-            <a href="#" class="content-things__link contect-things__link--toys">
+          <li class="intro__item">
+            <a href="#" class="intro__link intro__link--toys">
               <span>Детские игрушки</span>
             </a>
           </li>
@@ -80,35 +80,37 @@
       </div>
     </section>
     <section class="best-product">
-      <h2 class="visyally-hidden">Раздел информации о нас</h2>
+      <h2 class="visually-hidden">Раздел информации о нас</h2>
       <div class="best-product__wrapper">
         <div class="best-product__top-info">
-          <h2 class="best-proruct__title">
+          <h2 class="best-product__title">
             Вязаные корзинки
           </h2>
-          <span class="best-product__subtitle">
+          <p class="best-product__subtitle">
             Товар недели
-          </span>
+          </p>
         </div>
         <div class="best-product__main-information">
           <p class="best-product__text">
             Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <ul class="best-product__list list-unstyled">
-            <li class="best-prpduct__item">
-              <span>Цвет:</span>
-              <span>«Тиффани»/серый</span>
-            </li>
-            <li class="best-product__item">
-              <span>Диаметр:</span>
-              <span>25 см</span>
-            </li>
-            <li class="best-product__item">
-              <span>Высота:</span>
-              <span>15 см</span>
-            </li>
-          </ul>
+          <table class="best-product__table">
+            <tbody>
+              <tr class="best-product__item">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="best-product__item">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="best-product__item">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="best-product__image-container">
           <img src="https://via.placeholder.com/260x315">
@@ -117,11 +119,9 @@
           <p class="best-product__price">
             Цена: 990руб.
           </p>
-          <div class="best-product__link-container">
-            <a href="#" class="button best-product__link">
-              Заказать
-            </a>
-          </div>
+          <a href="#" class="button best-product__link">
+            Заказать
+          </a>
         </div>
       </div>
     </section>
@@ -131,7 +131,7 @@
           Коротко о нас
         </h2>
         <div class="about__container">
-          <ul class="about__list list-unstyled">
+          <ul class="about__list">
             <li class="about__item">
               <p class="about__text">
                 Экологически чистые материалы
@@ -205,11 +205,9 @@
           <button class="reviews__next" type="button">
             Следующий слайд
           </button>
-          <div class="reviews__button-wrapper">
-            <a href="#" class="button reviews__link">
-              Написать
-            </a>
-          </div>
+          <a href="#" class="button reviews__link">
+            Написать
+          </a>
         </div>
       </div>
     </section>
@@ -218,12 +216,12 @@
         <h2 class="contacts__title">
           Контакты
         </h2>
-        <ul class="contacts__list list-unstyled">
+        <ul class="contacts__list">
           <li class="contacts__item">
             <span>
               e-mail
             </span>
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__link contacts__link--active">
+            <a href="mailto:info@mimimishkashop.ru" class="contacts__link">
               info@mimimishkashop.ru
             </a>
           </li>
@@ -231,47 +229,45 @@
             <span>
               адрес:
             </span>
-            <a class="contacts__link">
+            <p class="contacts__text">
               Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-            </a>
+            </p>
           </li>
         </ul>
         <div class="contacts__main-map">
           <img src="https://via.placeholder.com/320x454">
         </div>
-        <div class="contacts__button-container">
-          <a href="#" class="button contacts__button">
-            напишите нам
-          </a>
-        </div>
+        <a href="#" class="button contacts__button">
+          напишите нам
+        </a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a href="#" class="page-footer__logo">
         <img src="https://via.placeholder.com/105x41">
       </a>
-      <ul class="page-footer__list list-unstyled">
+      <ul class="page-footer__list">
         <li class="page-footer__item">
-          <a class="page-footer__link">
+          <a href="#" class="page-footer__link">
             <img src="https://via.placeholder.com/22x21">
           </a>
         </li>
         <li class="page-footer__item">
-          <a class="page-footer__link">
+          <a href="#" class="page-footer__link">
             <img src="https://via.placeholder.com/15x28">
           </a>
         </li>
         <li class="page-footer__item">
-          <a class="page-footer__link">
+          <a href="#" class="page-footer__link">
             <img src="https://via.placeholder.com/23x20">
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy-link">
+      <a href="https://up.htmlacademy.ru/adaptive/21/project/mishka#mishka-3-10" class="page-footer__academy-link">
         Разработано
-        </p>
+      </a>
     </div>
   </footer>
 </body>
