@@ -1,0 +1,38 @@
+.best-product__title {
+  @include title;
+  margin-top: 31px;
+  margin-bottom: 3px;
+}
+
+.best-product__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-green-lower;
+  text-transform: uppercase;
+  font-family: "Open-sans-bold", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 17px;
+
+}
+
+.best-product__text {
+  font-size: 15px;
+  line-height: 24px;
+  width: 260px;
+}
+
+.best-product__table {
+  width: 260px;
+  margin-bottom: 28px;
+}
+
+.best-product__item {
+  box-shadow: inset 0 -1px 0 0 $basic-silver;
+}
+
+.best-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open-sans-bold", "Arial", sans-serif;
+}
+

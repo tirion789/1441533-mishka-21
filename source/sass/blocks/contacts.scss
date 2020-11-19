@@ -1,0 +1,43 @@
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-left: 15px;
+  width: 183px;
+}
+
+.contacts__link {
+  width: 183px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: $basic-black;
+  border-bottom: 1px solid $basic-green-light;
+
+  &:hover {
+    color: $basic-green-light;
+  }
+
+  &:active {
+    color: $basic-green-light;
+    border-bottom: 1px solid $basic-green-opacity;
+  }
+}
+
+.contacts__button {
+  margin-top: 41px;
+  margin-bottom: 39px;
+}
+
+.contacts__item {
+  display: flex;
+  margin-top: 25px;
+}
+
+.contacts__list {
+  @include list-unstyled;
+  margin-bottom: 63px;
+}

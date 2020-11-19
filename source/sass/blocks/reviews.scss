@@ -1,0 +1,35 @@
+.reviews__title {
+  @include title;
+}
+
+.reviews__item {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+
+  &:nth-child(3n) {
+    display: none;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  width: 260px;
+}
+
+.reviews__author-name {
+  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 33px;
+  margin-bottom: 5px;
+}
+
+.reviews__list:first-child{
+  display: none;
+}
+
+.reviews__link {
+  margin-top: 38px;
+}

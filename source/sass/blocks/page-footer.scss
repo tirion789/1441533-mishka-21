@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $basic-smoky-white;
+}
+
+.page-footer__list {
+  @include list-unstyled;
+}
+
+.page-footer__academy-link {
+  text-decoration: none;
+  color: $basic-black;
+  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+}

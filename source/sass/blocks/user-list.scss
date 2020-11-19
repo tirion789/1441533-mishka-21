@@ -1,0 +1,27 @@
+.user-list__link {
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  font-family: "Open-sans-bold", "Arial", sans-serif;
+  display: block;
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.user-list__item {
+  border-top: 1px solid $basic-silver;
+  width: 320px;
+
+  &:nth-child(2n) {
+    border-bottom: 1px solid $basic-silver;
+  }
+}
