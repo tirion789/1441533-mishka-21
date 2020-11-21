@@ -1,16 +1,19 @@
-
 .intro__title {
   font-size: 27px;
   line-height: 30px;
-  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-weight: 700;
   width: 260px;
+  padding-top: 73px;
+  margin: 0 auto;
   margin-bottom: 120px;
-  padding-top: 90px;
+  text-align: center;
 }
 
 .intro {
   background-image: url(../img/hero-mobile.jpg);
   background-repeat: no-repeat;
+  background-color: #f9f9f9;
+  background-position: 50% -15%;
 }
 
 .intro__list {
@@ -18,14 +21,12 @@
 }
 
 .intro__link {
-  text-decoration: none;
   font-size: 19px;
   line-height: 24px;
-  font-family: "Open-sans-bold", "Arial", sans-serif;
-  color: $basic-white;
+  font-weight: 700;
+  color: #ffffff;
   display: block;
-  width: 290px;
-  padding: 24px 0 31px 30px;
+  padding: 24px 0 31px 0;
 
   &:hover {
     margin-top: -5px;
@@ -43,4 +44,8 @@
 
 .intro__link span {
   white-space: pre-line;
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0 30px;
 }

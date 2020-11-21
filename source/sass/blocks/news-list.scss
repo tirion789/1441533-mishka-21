@@ -2,21 +2,23 @@
   color: $basic-black;
   font-size: 17px;
   line-height: 24px;
-  text-decoration: none;
-  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-weight: 700;
   display: none;
   width: 320px;
   text-align: center;
   padding-top: 28px;
   padding-bottom: 28px;
 
-    &:hover {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .news-list__item {
   border-top: 1px solid $basic-gray;
   width: 320px;

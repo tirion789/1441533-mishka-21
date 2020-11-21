@@ -9,3 +9,9 @@
   line-height: 30px;
   font-family: "Open-sans-bold", "Arial", sans-serif;
 }
+
+@mixin container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

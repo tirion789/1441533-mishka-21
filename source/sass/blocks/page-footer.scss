@@ -7,9 +7,16 @@
 }
 
 .page-footer__academy-link {
-  text-decoration: none;
   color: $basic-black;
-  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+}
+
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__logo {
+  display: none;
 }

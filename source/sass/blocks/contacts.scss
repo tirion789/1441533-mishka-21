@@ -13,7 +13,6 @@
 .contacts__link {
   width: 183px;
   margin-left: 15px;
-  text-decoration: none;
   color: $basic-black;
   border-bottom: 1px solid $basic-green-light;
 
@@ -40,4 +39,8 @@
 .contacts__list {
   @include list-unstyled;
   margin-bottom: 63px;
+}
+
+.contacts__wrapper {
+  @include container;
 }

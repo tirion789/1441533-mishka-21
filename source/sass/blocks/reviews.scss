@@ -5,12 +5,8 @@
 .reviews__item {
   padding: 0;
   margin: 0;
-  font-size: 15px;
   line-height: 30px;
-
-  &:nth-child(3n) {
-    display: none;
-  }
+  display: none;
 }
 
 .reviews__text {
@@ -18,18 +14,30 @@
   width: 260px;
 }
 
+.reviews__active {
+  display: block;
+}
+
 .reviews__author-name {
-  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   margin-top: 33px;
   margin-bottom: 5px;
 }
 
-.reviews__list:first-child{
+.reviews__link {
+  margin-top: 38px;
+}
+
+.reviews__slide-container {
   display: none;
 }
 
-.reviews__link {
-  margin-top: 38px;
+.reviews__wrapper {
+  @include container;
+}
+
+.reviews__slider-button {
+  margin-top: 30px;
 }

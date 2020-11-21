@@ -15,6 +15,10 @@
 .about__text {
   font-size: 17px;
   line-height: 20px;
-  font-family: "Open-sans-bold", "Arial", sans-serif;
+  font-weight: 700;
   max-width: 260px;
+}
+
+.about__wrapper {
+  @include container;
 }
