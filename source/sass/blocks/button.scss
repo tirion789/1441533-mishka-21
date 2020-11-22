@@ -1,0 +1,26 @@
+.button {
+  width: 260px;
+  text-align: center;
+  background: $basic-white;
+  mix-blend-mode: normal;
+  border: 2px solid $basic-black-lower;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $basic-black-lower;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(0deg, #444444, #444444);
+    color: $basic-white;
+  }
+
+  &:active {
+    color: $basic-gray;
+  }
+}

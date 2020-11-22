@@ -1,0 +1,26 @@
+.news-list__link {
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  display: none;
+  width: 320px;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.news-list__item {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  width: 320px;
+  display: none;
+}

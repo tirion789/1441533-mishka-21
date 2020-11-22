@@ -1,0 +1,39 @@
+.reviews__title {
+  @include title;
+}
+
+.reviews__item {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
+  width: 260px;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 33px;
+  margin-bottom: 5px;
+}
+
+.reviews__link {
+  margin-top: 38px;
+}
+
+.reviews__wrapper {
+  @include container;
+}
+
+.reviews__controls {
+  margin-top: 30px;
+}
+
+.reviews__item--active {
+  display: block;
+}

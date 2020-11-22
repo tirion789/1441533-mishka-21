@@ -1,0 +1,24 @@
+.about__title {
+  @include title;
+  margin-top: 79px;
+  margin-bottom: 0;
+}
+
+.about__list {
+  @include list-unstyled;
+}
+
+.about__item {
+  margin-top: 83px;
+}
+
+.about__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  max-width: 260px;
+}
+
+.about__wrapper {
+  @include container;
+}

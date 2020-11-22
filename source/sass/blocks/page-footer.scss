@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $basic-smoky-white;
+}
+
+.page-footer__list {
+  @include list-unstyled;
+}
+
+.page-footer__academy-link {
+  color: $basic-black;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__logo {
+  display: none;
+}

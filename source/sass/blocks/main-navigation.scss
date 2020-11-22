@@ -1,0 +1,9 @@
+
+.main-navigation__text {
+  line-height: 24px;
+  display: none;
+}
+
+.main-navigation__list {
+  @include list-unstyled;
+}
