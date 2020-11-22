@@ -21,9 +21,5 @@
 }
 
 .user-list__item {
-  border-top: 1px solid $basic-silver;
-
-  &:nth-child(2n) {
-    border-bottom: 1px solid $basic-silver;
-  }
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }

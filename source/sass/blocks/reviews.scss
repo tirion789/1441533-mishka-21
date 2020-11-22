@@ -14,10 +14,6 @@
   width: 260px;
 }
 
-.reviews__active {
-  display: block;
-}
-
 .reviews__author-name {
   font-weight: 700;
   font-size: 17px;
@@ -30,14 +26,14 @@
   margin-top: 38px;
 }
 
-.reviews__slide-container {
-  display: none;
-}
-
 .reviews__wrapper {
   @include container;
 }
 
-.reviews__slider-button {
+.reviews__controls {
   margin-top: 30px;
+}
+
+.reviews__item--active {
+  display: block;
 }
