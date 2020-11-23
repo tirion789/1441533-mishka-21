@@ -1,0 +1,20 @@
+.fieldset-type__list {
+  @include list-unstyled;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.fieldset-type__item {
+  margin-top: 24px;
+  width: 200px;
+  padding-left: 61px;
+}
+
+.fieldset-type__title {
+  @include fieldset-title;
+}
+
+.fieldset-type {
+  margin-top: 29px;
+}

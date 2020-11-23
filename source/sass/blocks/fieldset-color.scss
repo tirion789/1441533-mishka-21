@@ -1,0 +1,19 @@
+.fieldset-color__list {
+  @include list-unstyled;
+}
+
+.fieldset-color {
+  margin-top: 29px;
+}
+
+.fieldset-color__title {
+  @include fieldset-title;
+}
+
+.fieldset-color__item {
+  margin-top: 43px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  padding-left: 61px;
+}

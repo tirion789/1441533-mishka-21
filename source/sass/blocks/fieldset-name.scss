@@ -1,0 +1,22 @@
+.fieldset-name__list {
+  @include list-unstyled;
+  margin-top: 28px;
+}
+
+.fieldset-name {
+  margin-top: 33px;
+}
+
+.fieldset-name__title {
+  @include fieldset-title;
+}
+
+.fieldset-name__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  width: 260px;
+}

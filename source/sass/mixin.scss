@@ -15,3 +15,38 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
+@mixin fieldset-title {
+  color: #63D1BB;
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &::before {
+    width: 200px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: #63D1BB;
+    left: 60px;
+    top: 8px;
+  }
+}
+
+@mixin order-input {
+  border: none;
+  box-shadow: inset 0px -2px 0px #000000;
+  padding-bottom: 17px;
+  outline: none;
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black-lower;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: inset 0px -2px 0px #62D1BA;
+  }
+}

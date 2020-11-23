@@ -1,0 +1,80 @@
+.order-form__fieldset {
+  border: none;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.order-form__label {
+  @include fieldset-title;
+  margin-bottom: 16px;
+}
+
+.order-form__name-label {
+  margin-bottom: 16px;
+}
+
+.order-form__name-input {
+  @include order-input;
+}
+
+.order-form__name-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__input {
+  @include order-input;
+}
+
+.order-form__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__additionally-label {
+  @include fieldset-title;
+}
+
+.order-form__textarea {
+  width: 226px;
+  height: 142px;
+  margin-top: 22px;
+  padding: 17px 17px 89px 17px;
+  font-size: 17px;
+  line-height: 18px;
+  resize: vertical;
+  border: 2px solid #444444;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid #62D1BA;
+    outline: none;
+  }
+
+}
+
+.order-form__textarea::placeholder {
+  width: 226px;
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__text-bottom {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-form__bottom-container {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0 30px;
+}
