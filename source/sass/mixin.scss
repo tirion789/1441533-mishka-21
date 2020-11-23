@@ -17,7 +17,7 @@
 }
 
 @mixin fieldset-title {
-  color: #63D1BB;
+  color: #63d1bb;
   position: relative;
   font-size: 17px;
   line-height: 16px;
@@ -29,7 +29,7 @@
     height: 1px;
     content: "";
     position: absolute;
-    background-color: #63D1BB;
+    background-color: #63d1bb;
     left: 60px;
     top: 8px;
   }
@@ -37,7 +37,7 @@
 
 @mixin order-input {
   border: none;
-  box-shadow: inset 0px -2px 0px #000000;
+  box-shadow: inset 0 -2px 0 #000000;
   padding-bottom: 17px;
   outline: none;
   font-size: 17px;
@@ -47,6 +47,6 @@
   &:hover,
   &:active,
   &:focus {
-    box-shadow: inset 0px -2px 0px #62D1BA;
+    box-shadow: inset 0 -2px 0 #62d1ba;
   }
 }
