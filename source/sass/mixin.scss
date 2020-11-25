@@ -24,11 +24,11 @@
   width: 100%;
   max-width: 260px;
   text-transform: uppercase;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.2;
-  color: #63D1BB;
+  color: #63d1bb;
   padding: 0;
 
   &::after {
@@ -36,7 +36,7 @@
     flex-grow: 1;
     margin-top: 9px;
     height: 1px;
-    background-color: #63D1BB;
+    background-color: #63d1bb;
   }
 }
 
