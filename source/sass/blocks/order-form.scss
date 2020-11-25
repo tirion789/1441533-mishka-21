@@ -1,0 +1,96 @@
+.order-form__fieldset {
+  border: none;
+  max-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.order-form__label {
+  @include fieldset-title;
+  margin-bottom: 16px;
+}
+
+.order-form__name-label {
+  margin-bottom: 16px;
+}
+
+.order-form__name-input {
+  @include order-input;
+}
+
+.order-form__name-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__input {
+  @include order-input;
+}
+
+.order-form__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__additionally-label {
+  @include fieldset-title;
+}
+
+.order-form__textarea {
+  width: 222px;
+  height: 142px;
+  margin-top: 22px;
+  padding: 17px 17px 89px 17px;
+  font-size: 17px;
+  line-height: 1.2;
+  resize: vertical;
+  border: 2px solid #444444;
+  font-family: inherit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid #62d1ba;
+    outline: none;
+  }
+}
+
+.order-form__textarea::placeholder {
+  width: 226px;
+  font-size: 17px;
+  line-height: 1.2;
+  color: $basic-black;
+  opacity: 0.3;
+}
+
+.order-form__text-bottom {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.order-form__bottom-container {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0 30px;
+}
+
+.order-form__subtitle {
+  box-sizing: border-box;
+  min-width: 60px;
+  max-width: 50%;
+  padding-right: 18px;
+}
+
+.order-form__radio-label {
+  padding: 12px 30px 12px 61px;
+}
+
+.order-form__checkbox-label {
+  padding: 10px 30px 10px 61px;
+}

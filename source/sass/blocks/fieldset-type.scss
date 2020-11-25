@@ -1,0 +1,19 @@
+.fieldset-type__list {
+  @include list-unstyled;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.fieldset-type__item {
+  min-height: 42px;
+  display: flex;
+}
+
+.fieldset-type__title {
+  @include fieldset-title;
+}
+
+.fieldset-type {
+  margin-top: 29px;
+}
