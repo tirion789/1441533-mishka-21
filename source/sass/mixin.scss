@@ -14,24 +14,29 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  box-sizing: border-box;
 }
 
 @mixin fieldset-title {
-  color: #63d1bb;
-  position: relative;
-  font-size: 17px;
-  line-height: 16px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto 10px;
+  width: 100%;
+  max-width: 260px;
   text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #63D1BB;
+  padding: 0;
 
-  &::before {
-    width: 200px;
-    height: 1px;
+  &::after {
     content: "";
-    position: absolute;
-    background-color: #63d1bb;
-    left: 60px;
-    top: 8px;
+    flex-grow: 1;
+    margin-top: 9px;
+    height: 1px;
+    background-color: #63D1BB;
   }
 }
 
@@ -41,7 +46,7 @@
   padding-bottom: 17px;
   outline: none;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1.2;
   color: $basic-black-lower;
 
   &:hover,
