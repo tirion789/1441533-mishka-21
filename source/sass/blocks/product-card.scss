@@ -1,7 +1,6 @@
 .product-card__inner {
-  padding-left: 28px;
+  padding: 27px;
   border: 1px solid #ececec;
-  width: 230px;
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -15,8 +14,8 @@
 .product-card__title {
   font-size: 17px;
   line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .product-card__text {
@@ -43,19 +42,10 @@
 
 .product-card__price {
   display: block;
-  margin-bottom: 26px;
-  margin-top: 41px;
-  position: relative;
   font-size: 15px;
+  margin: 0;
+  border-top: 1px solid #ececec;
+  padding-top: 24px;
   line-height: 24px;
   font-weight: 700;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 204px;
-    height: 1px;
-    background: #ececec;
-    top: -23px;
-  }
 }
