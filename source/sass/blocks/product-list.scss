@@ -1,0 +1,11 @@
+.product-list__item {
+  margin-top: 30px;
+}
+
+.product-list {
+  @include list-unstyled;
+  max-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
