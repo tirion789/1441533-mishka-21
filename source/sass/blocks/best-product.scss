@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .best-product__wrapper {
-    @include table-container
+    @include table-container;
   }
 
   .best-product__title {

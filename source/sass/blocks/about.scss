@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
-    @include table-container
+    @include table-container;
   }
 
   .about__list {

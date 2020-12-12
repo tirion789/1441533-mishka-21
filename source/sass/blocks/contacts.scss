@@ -82,6 +82,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    max-width: 1150px;
   }
 
   .contacts__main-map {
@@ -112,10 +113,6 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .contacts__wrapper {
-    max-width: 1150px;
   }
 
   .contacts__table-container {
