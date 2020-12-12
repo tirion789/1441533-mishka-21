@@ -14,6 +14,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.jpg");
   background-position: 50% -15%;
+  border-top: 1px solid #ECECEC;
 }
 
 .intro__list {
@@ -48,4 +49,61 @@
   margin: 0 auto;
   max-width: 260px;
   padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__list {
+    display: flex;
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .intro__link--interior {
+    width: 334px;
+  }
+
+  .intro__link--toys {
+    width: 334px;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+    margin-top: 143px;
+    margin-bottom: 312px;
+  }
+
+  .intro {
+    background-image: url("../img/hero-desktop 2.jpg")
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 81px;
+    margin-bottom: 360px;
+  }
+
+  .intro__list {
+    display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .intro__link--interior {
+    width: 525px;
+  }
+
+  .intro__link--toys {
+    width: 525px;
+  }
+
+  .intro__link span {
+    max-width: 525px;
+  }
 }

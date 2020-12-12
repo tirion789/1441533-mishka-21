@@ -23,3 +23,21 @@
 .site-list__item {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
+
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    padding: 0
+}
+
+  .site-list__item {
+    box-shadow: none;
+    padding: 20px 37px 25px 0;
+  }
+
+  .site-list {
+    display: flex;
+    order: 2;
+    max-height: 0;
+  }
+}

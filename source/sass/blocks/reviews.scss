@@ -37,3 +37,69 @@
 .reviews__item--active {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    @include table-container;
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    position: relative;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 668px;
+  }
+
+  .reviews__link {
+    position: absolute;
+    left: 530px;
+    top: 0;
+    width: 175px;
+    margin: 0;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    right: 55px;
+    bottom: 35px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    max-width: 1150px;
+  }
+
+  .reviews__title {
+    padding-left: 160px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__slider {
+    padding-left: 160px;
+  }
+
+  .reviews__controls {
+    padding-left: 160px;
+    position: absolute;
+    right: 55px;
+    bottom: 35px;
+  }
+
+  .reviews__link {
+    right: 50px;
+    left: inherit;
+  }
+
+  .reviews__text {
+    width: 875px;
+  }
+}
