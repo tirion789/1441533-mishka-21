@@ -23,3 +23,41 @@
 .user-list__item {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    order: 1;
+    margin-left: auto;
+    width: 80%;
+  }
+
+  .user-list__item {
+    box-shadow: none;
+  }
+
+  .user-list__link span {
+    display: none;
+  }
+
+  .user-list__link {
+    padding: 32px 53px;
+    padding-right: 0;
+  }
+
+  .user-list__search {
+    margin-left: auto;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .user-list__search-link {
+    padding: 36px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 331px;
+  }
+}

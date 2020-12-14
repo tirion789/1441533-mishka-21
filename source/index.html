@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,9 +33,10 @@
           </li>
         </ul>
         <ul class="main-navigation__list user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link">
-              Поиск по сайту
+          <li class="user-list__item user-list__search">
+            <a href="#" class="user-list__link user-list__search-link">
+              <img src="https://via.placeholder.com/18x18">
+              <span>Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -46,18 +48,18 @@
         <ul class="main-navigation__list news-list">
           <li class="news-list__item">
             <a href="#" class="news-list__link">
-              Новый поступления
+              Новые поступления
             </a>
           </li>
           <li class="news-list__item">
             <a href="#" class="news-list__link">
-              Распрадажа
+              Распродажа
             </a>
           </li>
         </ul>
-        <p class="main-navigation__text">
-          Бесплатная доставка по России
-        </p>
+          <p class="main-navigation__text">
+            Бесплатная доставка по России
+          </p>
       </div>
     </nav>
   </header>
@@ -94,36 +96,38 @@
             Товар недели
           </p>
         </div>
-        <div class="best-product__main-information">
-          <p class="best-product__text">
-            Экологически чистая пряжа,
-            ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="best-product__table">
-            <tr class="best-product__item">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr class="best-product__item">
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr class="best-product__item">
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-        </div>
-        <div class="best-product__image-container">
-          <img src="https://via.placeholder.com/260x315">
-        </div>
-        <div class="best-product__purchase">
-          <p class="best-product__price">
-            Цена: 990руб.
-          </p>
-          <a href="#" class="button best-product__link">
-            Заказать
-          </a>
+        <div class="best-product__container">
+          <div class="best-product__main-information">
+            <p class="best-product__text">
+              Экологически чистая пряжа,
+              ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="best-product__table">
+              <tr class="best-product__item">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="best-product__item">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="best-product__item">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="best-product__image-container">
+            <img src="https://via.placeholder.com/260x315">
+          </div>
+          <div class="best-product__purchase">
+            <p class="best-product__price">
+              Цена: 990руб.
+            </p>
+            <a href="#" class="button best-product__link">
+              Заказать
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -132,40 +136,38 @@
         <h2 class="about__title">
           Коротко о нас:
         </h2>
-        <div class="about__container">
-          <ul class="about__list">
-            <li class="about__item">
-              <p class="about__text">
-                Экологически чистые материалы
-              </p>
-            </li>
-            <li class="about__item">
-              <p class="about__text">
-                Скандинавский стиль по российской цене
-              </p>
-            </li>
-            <li class="about__item">
-              <p class="about__text">
-                Увеличивает лайки на фотографиях
-              </p>
-            </li>
-            <li class="about__item">
-              <p class="about__text">
-                Связано в ручную с любовью и умилением
-              </p>
-            </li>
-            <li class="about__item">
-              <p class="about__text">
-                Поддержка отечетсвенного производителя
-              </p>
-            </li>
-            <li class="about__item">
-              <p class="about__text">
-                Поставляется в подарочной упаковке
-              </p>
-            </li>
-          </ul>
-        </div>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__text">
+              Экологически чистые материалы
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text">
+              Скандинавский стиль по российской цене
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text">
+              Увеличивает лайки на фотографиях
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text">
+              Связано в ручную с любовью и умилением
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text">
+              Поддержка отечетсвенного производителя
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text">
+              Поставляется в подарочной упаковке
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="reviews">
@@ -209,35 +211,37 @@
           <button class="reviews__button reviews__button--next" type="button">
             Следующий слайд
           </button>
-          <a href="#" class="button reviews__link">
-            Написать
-          </a>
         </div>
+        <a href="#" class="button reviews__link">
+          Написать
+        </a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">
-          Контакты
-        </h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span>
-              e-mail
-            </span>
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__link">
-              info@mimimishkashop.ru
-            </a>
-          </li>
-          <li class="contacts__item">
-            <span>
-              адрес:
-            </span>
-            <p class="contacts__text">
-              Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-            </p>
-          </li>
-        </ul>
+        <div class="contacts__table-container">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span>
+                e-mail
+              </span>
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__link">
+                info@mimimishkashop.ru
+              </a>
+            </li>
+            <li class="contacts__item">
+              <span>
+                адрес:
+              </span>
+              <p class="contacts__text">
+                г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="contacts__main-map">
           <img src="https://via.placeholder.com/320x454">
         </div>

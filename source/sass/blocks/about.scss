@@ -1,7 +1,6 @@
 .about__title {
   @include title;
-  margin-top: 79px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .about__list {
@@ -9,7 +8,8 @@
 }
 
 .about__item {
-  margin-top: 83px;
+  margin-bottom: 50px;
+  padding-top: 55px;
 }
 
 .about__text {
@@ -21,4 +21,47 @@
 
 .about__wrapper {
   @include container;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    @include table-container;
+  }
+
+  .about__list {
+    @include list-unstyled;
+    column-count: 2;
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 324px;
+    margin: 0;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    max-width: 1150px;
+  }
+
+  .about__list {
+    padding-left: 160px;
+  }
+
+  .about__title {
+    padding-left: 160px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

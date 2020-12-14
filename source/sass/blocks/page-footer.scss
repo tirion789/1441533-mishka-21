@@ -20,3 +20,36 @@
 .page-footer__logo {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__list {
+    display: flex;
+    width: 139px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    max-width: 1150px;
+  }
+}

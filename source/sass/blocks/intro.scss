@@ -3,7 +3,7 @@
   line-height: 30px;
   font-weight: 700;
   width: 260px;
-  padding-top: 73px;
+  padding-top: 80px;
   margin: 0 auto;
   margin-bottom: 120px;
   text-align: center;
@@ -48,4 +48,63 @@
   margin: 0 auto;
   max-width: 260px;
   padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__list {
+    display: flex;
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .intro__link--interior {
+    width: 334px;
+  }
+
+  .intro__link--toys {
+    width: 334px;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+    margin-bottom: 125px;
+    min-height: 300px;
+    padding-top: 200px;
+  }
+
+  .intro {
+    background-image: url("../img/hero-desktopp.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 125px;
+    min-height: 300px;
+    padding-top: 200px;
+  }
+
+  .intro__list {
+    display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .intro__link--interior {
+    width: 525px;
+  }
+
+  .intro__link--toys {
+    width: 525px;
+  }
+
+  .intro__link span {
+    max-width: 525px;
+  }
 }

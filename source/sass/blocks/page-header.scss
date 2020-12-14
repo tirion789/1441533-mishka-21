@@ -1,6 +1,18 @@
-.page-header__logo {
-  display: block;
-  max-width: 320px;
-  margin: 0 auto;
-  padding-left: 116px;
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin-left: 50%;
+  }
 }

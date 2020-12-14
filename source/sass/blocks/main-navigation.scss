@@ -7,3 +7,38 @@
 .main-navigation__list {
   @include list-unstyled;
 }
+
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation {
+    max-width: 1150px;
+    padding: 0 50px;
+  }
+
+  .main-navigation__text {
+    line-height: 24px;
+    display: block;
+    order: 5;
+    max-height: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    width: 231px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}

@@ -17,6 +17,13 @@
   box-sizing: border-box;
 }
 
+@mixin table-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
 @mixin fieldset-title {
   display: flex;
   align-items: flex-start;

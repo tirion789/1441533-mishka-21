@@ -3,7 +3,6 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  display: none;
   width: 320px;
   text-align: center;
   padding-top: 28px;
@@ -22,5 +21,28 @@
 .news-list__item {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   width: 320px;
+}
+
+.news-list {
   display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .news-list {
+    display: flex;
+    order: 1;
+    max-height: 0;
+    align-items: flex-start;
+    width: 486px;
+  }
+
+  .news-list__item {
+    box-shadow: none;
+    padding: 20px 62px 25px 0;
+    width: inherit;
+  }
+
+  .news-list__link {
+    padding: 0;
+  }
 }
