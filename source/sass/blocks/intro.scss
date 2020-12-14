@@ -3,7 +3,7 @@
   line-height: 30px;
   font-weight: 700;
   width: 260px;
-  padding-top: 73px;
+  padding-top: 80px;
   margin: 0 auto;
   margin-bottom: 120px;
   text-align: center;
@@ -14,7 +14,6 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.jpg");
   background-position: 50% -15%;
-  border-top: 1px solid #ececec;
 }
 
 .intro__list {
@@ -71,8 +70,9 @@
     font-size: 43px;
     line-height: 50px;
     width: 668px;
-    margin-top: 143px;
-    margin-bottom: 312px;
+    margin-bottom: 125px;
+    min-height: 300px;
+    padding-top: 200px;
   }
 
   .intro {
@@ -84,8 +84,9 @@
   .intro__title {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 81px;
-    margin-bottom: 360px;
+    margin-bottom: 125px;
+    min-height: 300px;
+    padding-top: 200px;
   }
 
   .intro__list {

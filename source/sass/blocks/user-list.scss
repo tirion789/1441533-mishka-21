@@ -29,7 +29,7 @@
     display: flex;
     order: 1;
     margin-left: auto;
-    width: 100%;
+    width: 80%;
   }
 
   .user-list__item {
@@ -53,5 +53,11 @@
 
   .user-list__search-link {
     padding: 36px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 331px;
   }
 }

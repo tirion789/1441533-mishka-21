@@ -14,17 +14,8 @@
     flex-wrap: wrap;
   }
 
-  .site-list {
-    display: flex;
-    order: 2;
-  }
-
   .main-navigation__toggle {
     display: none;
-  }
-
-  .page-header__logo {
-    position: absolute;
   }
 
   .main-navigation {
@@ -41,16 +32,14 @@
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: -20px;
-  }
-
-  .main-navigation__text-container {
-    margin-top: 20px;
+    width: 231px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-navigation {
     max-width: 1150px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
