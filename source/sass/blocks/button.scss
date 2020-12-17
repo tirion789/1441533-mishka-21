@@ -26,17 +26,3 @@
     color: $basic-gray;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .button {
-    font-size: 17px;
-    line-height: 20px;
-    width: 230px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button {
-    margin-left: 200px;
-  }
-}

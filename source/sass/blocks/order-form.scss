@@ -170,6 +170,12 @@
   .order-form__container {
     padding-top: 50px;
   }
+
+  .order-form__button {
+    font-size: 17px;
+    line-height: 20px;
+    width: 230px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -208,5 +214,9 @@
 
   .order-form__container {
     padding-top: 60px;
+  }
+
+  .order-form__button {
+    margin-left: 200px;
   }
 }
