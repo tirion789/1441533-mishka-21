@@ -94,3 +94,119 @@
 .order-form__checkbox-label {
   padding: 10px 30px 10px 61px;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__fieldset {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: 81px;
+  }
+
+  .order-form__radio-label {
+    padding: 12px 109px 12px 80px;
+  }
+
+  .order-form__name-label {
+    margin-right: 24px;
+  }
+
+  .order-form__name-input {
+    width: 100%;
+  }
+
+  .order-form__subtitle {
+    min-width: 88px;
+  }
+
+  .order-form__label {
+    margin: 0;
+    max-width: 130px;
+  }
+
+  .order-form__input {
+    width: 100%;
+  }
+
+  .order-form__textarea {
+    margin-top: 0;
+    width: 501px;
+    height: 32px;
+  }
+
+  .order-form__additionally-label {
+    margin: 0;
+    max-width: 130px;
+  }
+
+  .order-form__additionally-label::after {
+    background-color: inherit;
+  }
+
+  .order-form__bottom-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 81px;
+    margin-bottom: 81px;
+  }
+
+  .order-form__text-bottom {
+    order: 2;
+  }
+
+  .order-form__label::after {
+    background-color: inherit;
+  }
+
+  .order-form__fieldset--grey {
+    background: #f1f1f1;
+  }
+
+  .order-form__container {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__fieldset {
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: 81px auto 0;
+    padding: 0 50px;
+  }
+
+  .order-form__input {
+    margin-left: 70px;
+    background-color: inherit;
+  }
+
+  .order-form__textarea {
+    margin-left: 70px;
+    width: 700px;
+  }
+
+  .order-form__bottom-container {
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: 81px auto 81px;
+    padding: 0 50px;
+    display: flex;
+  }
+
+  .order-form__text-bottom {
+    padding-right: 110px;
+  }
+
+  .order-form__fieldset--grey {
+    background-color: #f1f1f1;
+  }
+
+  .order-form__container {
+    padding-top: 60px;
+  }
+}
