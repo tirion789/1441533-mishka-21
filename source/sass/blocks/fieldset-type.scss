@@ -14,10 +14,6 @@
   @include fieldset-title;
 }
 
-.fieldset-type {
-  margin-top: 29px;
-}
-
 @media (min-width: $tablet-width) {
   .fieldset-type {
     margin-top: 81px;

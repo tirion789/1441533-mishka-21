@@ -27,6 +27,7 @@
 
   .fieldset-color__title {
     margin: 0;
+    padding-top: 55px;
   }
 
   .fieldset-color__list {
@@ -35,7 +36,6 @@
     margin: 0 auto;
     margin-top: -29px;
     margin-left: 125px;
-    row-gap: 44px;
   }
 
   .fieldset-color__item {
@@ -56,6 +56,10 @@
 
   .fieldset-color__item {
     margin-left: 50px;
+  }
+
+  .fieldset-color__title {
+    padding-top: 55px;
   }
 
   .fieldset-color {
