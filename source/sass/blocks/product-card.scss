@@ -49,3 +49,52 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .product-card__inner {
+    width: 259px;
+    height: 280px;
+    padding: 27px 39px 25px 34px;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product-card__text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 145px;
+  }
+
+  .product-card__img {
+    width: 334px;
+    background-color: aqua;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__inner {
+    width: 241px;
+    height: 143px;
+  }
+
+  .product-card__price {
+    margin-top: 25px;
+  }
+
+  .product-card__img {
+    width: 315px;
+    height: 462px;
+  }
+
+  .product-card__price:last-child {
+    margin-top: 50px;
+  }
+}
