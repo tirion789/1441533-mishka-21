@@ -17,3 +17,52 @@
   min-height: 38px;
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-color {
+    display: flex;
+    margin-top: 81px;
+    height: 304px;
+  }
+
+  .fieldset-color__title {
+    margin: 0;
+    padding-top: 55px;
+  }
+
+  .fieldset-color__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: -29px;
+    margin-left: 125px;
+  }
+
+  .fieldset-color__item {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .fieldset-color__title::after {
+    background-color: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-color__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 160px;
+  }
+
+  .fieldset-color__item {
+    margin-left: 50px;
+  }
+
+  .fieldset-color__title {
+    padding-top: 55px;
+  }
+
+  .fieldset-color {
+    height: 228px;
+  }
+}

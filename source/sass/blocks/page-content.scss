@@ -20,3 +20,31 @@
   padding: 0 30px;
   margin-top: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-content__description {
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .page-content__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 417px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__description {
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 30px;
+    box-sizing: border-box;
+    max-width: 1150px;
+    padding-left: 245px;
+    padding-right: 225px;
+  }
+}

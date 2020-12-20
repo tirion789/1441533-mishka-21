@@ -14,6 +14,31 @@
   @include fieldset-title;
 }
 
-.fieldset-type {
-  margin-top: 29px;
+@media (min-width: $tablet-width) {
+  .fieldset-type {
+    margin-top: 81px;
+    display: flex;
+  }
+
+  .fieldset-type__title {
+    margin: 0;
+    margin-top: 29px;
+  }
+
+  .fieldset-type__title::after {
+    background-color: initial;
+  }
+
+  .fieldset-type__list {
+    margin: 0 auto;
+    margin-top: -30px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-type__list {
+    margin-left: 189px;
+  }
 }

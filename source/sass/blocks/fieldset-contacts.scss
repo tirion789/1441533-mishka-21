@@ -4,3 +4,29 @@
   width: 260px;
   margin-bottom: 34px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-contacts__item {
+    flex-direction: row;
+    width: 668px;
+  }
+
+  .fieldset-contacts {
+    height: 228px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-contacts__container {
+    padding-top: 50px;
+  }
+
+  .fieldset-contacts {
+    height: 228px;
+  }
+
+  .fieldset-contacts__item {
+    width: 934px;
+  }
+}

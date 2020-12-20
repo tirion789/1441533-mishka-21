@@ -20,3 +20,41 @@
   margin-bottom: 21px;
   width: 260px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-name {
+    display: flex;
+    margin-top: 81px;
+  }
+
+  .fieldset-name__title {
+    margin: 0;
+  }
+
+  .fieldset-name__title::after {
+    background-color: inherit;
+  }
+
+  .fieldset-name__list {
+    margin-left: 130px;
+    margin-top: -20px;
+  }
+
+  .fieldset-name__item {
+    font-size: 19px;
+    line-height: 1.2;
+    flex-direction: row;
+    width: 538px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-name__list {
+    margin-left: 200px;
+  }
+
+  .fieldset-name__item {
+    width: 729px;
+  }
+}
