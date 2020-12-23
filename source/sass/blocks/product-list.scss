@@ -9,3 +9,31 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .product-list__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-list__item {
+    flex-direction: column;
+  }
+}

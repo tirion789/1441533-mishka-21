@@ -16,13 +16,12 @@
 
 @media (min-width: $tablet-width) {
   .fieldset-type {
-    margin-top: 81px;
+    margin-top: 0;
     display: flex;
   }
 
   .fieldset-type__title {
     margin: 0;
-    margin-top: 29px;
   }
 
   .fieldset-type__title::after {
