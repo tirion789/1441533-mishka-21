@@ -8,6 +8,33 @@
   @include list-unstyled;
 }
 
+.main-navigation {
+  display: none;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  right: 31px;
+  top: 15px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  top: 0;
+  box-shadow: 0 6px 0 0 black, 0 12px 0 0 black;
+}
+
 @media (min-width: $tablet-width) {
   .main-navigation__wrapper {
     display: flex;
@@ -19,6 +46,7 @@
   }
 
   .main-navigation {
+    display: block;
     max-width: 1150px;
     padding: 0 50px;
   }
@@ -40,5 +68,6 @@
   .main-navigation {
     max-width: 1150px;
     margin: 0 auto;
+    display: block;
   }
 }

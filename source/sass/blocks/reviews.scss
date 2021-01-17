@@ -1,5 +1,6 @@
 .reviews__title {
   @include title;
+  margin-bottom: 15px;
 }
 
 .reviews__item {
@@ -11,57 +12,100 @@
 
 .reviews__text {
   margin: 0;
-  width: 260px;
+  width: 100%;
 }
 
 .reviews__author-name {
   font-weight: 700;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   margin-top: 33px;
   margin-bottom: 5px;
 }
 
 .reviews__link {
-  margin-top: 38px;
+  margin-top: 42px;
 }
 
 .reviews__wrapper {
-  @include container;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: auto;
 }
 
 .reviews__controls {
-  margin-top: 30px;
+  margin-top: 26px;
+  display: flex;
 }
 
 .reviews__item--active {
   display: block;
 }
 
+.reviews__button {
+  width: 129px;
+  height: 52px;
+  border: 1px solid #ececec;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+}
+
+.reviews__button--prev::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 26px;
+  background-image: url("/img/huge-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 13px;
+  left: 38px;
+}
+
+.reviews__button--next::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 26px;
+  background-image: url("/img/huge-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 13px;
+  left: 38px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-    @include table-container;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
     position: relative;
+    width: auto;
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
     position: relative;
+    margin-bottom: 35px;
   }
 
   .reviews__text {
     font-size: 17px;
     line-height: 30px;
-    width: 668px;
   }
 
   .reviews__link {
     position: absolute;
-    left: 530px;
-    top: 0;
+    top: -4px;
     width: 175px;
     margin: 0;
+    padding-top: 15px;
+    font-size: 17px;
+    line-height: 20px;
+    right: 50px;
   }
 
   .reviews__controls {
@@ -69,6 +113,17 @@
     right: 55px;
     bottom: 35px;
     margin: 0;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 62px;
+  }
+
+  .reviews__author-contact {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -78,28 +133,36 @@
   }
 
   .reviews__title {
-    padding-left: 160px;
+    padding-left: 174px;
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 36px;
   }
 
   .reviews__slider {
-    padding-left: 160px;
+    padding-left: 174px;
   }
 
   .reviews__controls {
-    padding-left: 160px;
+    padding-left: 174px;
     position: absolute;
     right: 55px;
     bottom: 35px;
   }
 
   .reviews__link {
-    right: 50px;
-    left: inherit;
+    right: 48px;
+    left: auto;
+    top: 2px;
   }
 
   .reviews__text {
     width: 875px;
+  }
+
+  .reviews__author-name {
+    margin-top: 43px;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
