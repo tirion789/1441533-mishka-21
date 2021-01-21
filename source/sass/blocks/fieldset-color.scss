@@ -1,9 +1,10 @@
 .fieldset-color__list {
   @include list-unstyled;
+  margin-top: 10px;
 }
 
 .fieldset-color {
-  margin-top: 29px;
+  margin-top: 40px;
 }
 
 .fieldset-color__title {
@@ -16,26 +17,29 @@
   font-weight: 700;
   min-height: 38px;
   display: flex;
+  margin-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .fieldset-color {
     display: flex;
-    margin-top: 81px;
+    margin-top: 20px;
     height: 304px;
   }
 
   .fieldset-color__title {
     margin: 0;
-    padding-top: 55px;
+    padding-top: 69px;
   }
 
   .fieldset-color__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    margin-top: -29px;
-    margin-left: 125px;
+    margin-top: -31px;
+    margin-left: 190px;
+    width: 521px;
+    height: 222px;
   }
 
   .fieldset-color__item {
@@ -59,7 +63,7 @@
   }
 
   .fieldset-color__title {
-    padding-top: 55px;
+    padding-top: 63px;
   }
 
   .fieldset-color {

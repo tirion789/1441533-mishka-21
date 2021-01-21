@@ -9,7 +9,7 @@
 
 .page-content__header {
   background-color: $basic-smoky-white;
-  padding: 74px 23px;
+  padding: 73px 23px 73px;
 }
 
 .page-content__description {
@@ -23,17 +23,35 @@
 
 @media (min-width: $tablet-width) {
   .page-content__description {
-    max-width: 668px;
+    max-width: 665px;
     margin: 0 auto;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
+    margin-top: 68px;
   }
 
   .page-content__title {
     font-size: 43px;
     line-height: 50px;
     width: 417px;
+  }
+
+  .page-content__header {
+    padding: 101px 23px 73px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/zigzag-fill-desktop-white.svg");
+      width: 100%;
+      height: 24px;
+      bottom: -15px;
+      left: 0;
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+    }
   }
 }
 
@@ -44,7 +62,30 @@
     line-height: 30px;
     box-sizing: border-box;
     max-width: 1150px;
-    padding-left: 245px;
+    padding-left: 225px;
     padding-right: 225px;
+    margin-top: 119px;
+  }
+
+  .page-content__header {
+    padding: 101px 23px 93px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/zigzag-fill-desktop-white.svg");
+      width: 100%;
+      left: 0;
+      background-repeat: repeat-x;
+      background-size: auto 34px;
+      height: 34px;
+      bottom: -14px;
+    }
+  }
+
+  .page-content__title {
+    width: 500px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

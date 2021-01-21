@@ -8,11 +8,6 @@
   margin-top: 81px;
 }
 
-.about__item {
-  margin-bottom: 82px;
-  position: relative;
-}
-
 .about__text {
   font-size: 17px;
   line-height: 20px;
@@ -28,47 +23,99 @@
 }
 
 .about {
-  margin-top: 72px;
+  margin-top: 76px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/zigzag-line-desktop.svg.svg");
+    width: 100%;
+    height: 7px;
+    background-repeat: repeat-x;
+    background-size: auto 7px;
+    left: 0;
+    top: -41px;
+  }
 }
 
+.about__item {
+  margin-bottom: 82px;
+  position: relative;
 
-.about__item-svg-money {
-  position: absolute;
-  top: -55px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+
+  &--flower {
+    &::before {
+      background-image: url("../img/flower.svg");
+      width: 33px;
+      height: 38px;
+      left: 9px;
+      bottom: 59px;
+    }
+  }
+
+  &--money {
+    &::before {
+      background-image: url("../img/money.svg");
+      width: 47px;
+      height: 27px;
+      left: 0;
+      bottom: 68px;
+    }
+  }
+
+  &--heart {
+    &::before {
+      background-image: url("../img/hearth.svg");
+      width: 34px;
+      height: 27px;
+      left: 7px;
+      bottom: 62px;
+    }
+  }
+
+  &--ball {
+    &::before {
+      background-image: url("../img/ball.svg");
+      width: 35px;
+      height: 34px;
+      left: 3px;
+      bottom: 57px;
+    }
+  }
+
+  &--rocket {
+    &::before {
+      background-image: url("../img/rocket.svg");
+      width: 55px;
+      height: 23px;
+      left: -5px;
+      bottom: 66px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      background-image: url("../img/gift.svg");
+      width: 33px;
+      height: 32px;
+      left: 2px;
+      bottom: 58px;
+    }
+  }
 }
 
 .about__item:last-child {
   margin-bottom: 59px;
-}
-
-.about__item-svg-ball {
-  position: absolute;
-  left: 3px;
-  top: -52px;
-}
-
-.about__item-svg-flower {
-  position: absolute;
-  top: -58px;
-  left: 9px;
-}
-
-.about__item-svg-rocket {
-  position: absolute;
-  top: -50px;
-  left: -6px;
-}
-
-.about__item-svg-gift {
-  position: absolute;
-  top: -51px;
-  left: 3px;
-}
-
-.about__item-svg-heart {
-  position: absolute;
-  top: -50px;
-  left: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,18 +127,68 @@
   }
 
   .about {
-    margin-bottom: 82px;
+    margin-bottom: 106px;
     margin-top: 126px;
+
+    &::before {
+      height: 17px;
+      background-size: auto 17px;
+      top: -71px;
+    }
   }
 
   .about__item {
-    margin-bottom: 110px;
+    margin-bottom: 56px;
+    padding-top: 55px;
+    margin-top: 0;
+
+    &--flower {
+      &::before {
+        left: 9px;
+        bottom: 63px;
+      }
+    }
+
+    &--money {
+      &::before {
+        left: 0;
+        bottom: 71px;
+      }
+    }
+
+    &--heart {
+      &::before {
+        left: 8px;
+        bottom: 68px;
+      }
+    }
+
+    &--ball {
+      &::before {
+        left: 1px;
+        bottom: 63px;
+      }
+    }
+
+    &--rocket {
+      &::before {
+        left: -7px;
+        bottom: 73px;
+      }
+    }
+
+    &--gift {
+      &::before {
+        left: 2px;
+        bottom: 66px;
+      }
+    }
   }
 
   .about__list {
     @include list-unstyled;
     column-count: 2;
-    margin-top: 98px;
+    width: 98%;
   }
 
   .about__text {
@@ -104,7 +201,7 @@
   .about__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 }
 
@@ -127,6 +224,15 @@
 
   .about {
     margin-top: 164px;
-    margin-bottom: 81px;
+    margin-bottom: 109px;
+
+    &::before {
+      width: 1050px;
+      left: 50%;
+      height: 23px;
+      background-size: auto 23px;
+      transform: translate(-50%);
+      top: -91px;
+    }
   }
 }

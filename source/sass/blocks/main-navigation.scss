@@ -12,7 +12,7 @@
   display: none;
 }
 
-.main-navigation__toggle {
+.page-header__toggle {
   position: absolute;
   right: 31px;
   top: 15px;
@@ -24,15 +24,15 @@
   background-color: inherit;
 }
 
-.main-navigation__toggle::before {
+.page-header__toggle::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: black;
+  background-color: #000000;
   left: 0;
   top: 0;
-  box-shadow: 0 6px 0 0 black, 0 12px 0 0 black;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0  #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +41,7 @@
     flex-wrap: wrap;
   }
 
-  .main-navigation__toggle {
+  .page-header__toggle {
     display: none;
   }
 
@@ -61,6 +61,7 @@
     margin-top: 20px;
     margin-bottom: -20px;
     width: 231px;
+    z-index: 2;
   }
 }
 

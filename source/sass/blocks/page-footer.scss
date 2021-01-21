@@ -7,6 +7,17 @@
   padding-top: 29px;
   display: flex;
   padding-left: 60px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 260px;
+    bottom: 5px;
+    left: 6px;
+  }
 }
 
 .page-footer__academy-link {
@@ -19,18 +30,6 @@
   left: 70px;
 }
 
-.page-footer__academy-link::before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 34px;
-  background-image: url("../img/work.svg");
-  right: -53px;
-  bottom: -6px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .page-footer__wrapper {
   @include container;
   height: 160px;
@@ -41,45 +40,33 @@
   display: none;
 }
 
-.page-footer--instagram::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 21px;
-  background-image: url("../img/insta.svg.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.page-footer--facebook::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 28px;
-  background-image: url("../img/fb.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.page-footer--twitter::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 20px;
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .page-footer__link {
   position: relative;
   margin-right: 60px;
 }
 
+.page-footer__link svg:hover {
+  fill: #46c1ae;
+}
+
+.page-footer__link svg:active {
+  opacity: 0.3;
+}
+
+.page-footer__svg {
+  position: absolute;
+  right: -54px;
+  top: -5px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
-    padding-top: 64px;
+    padding-top: 50px;
   }
 
   .page-footer__wrapper {
@@ -96,19 +83,13 @@
     width: 139px;
     justify-content: space-between;
     padding: 0;
-    padding-top: 72px;
+    padding-top: 57px;
     padding-left: 118px;
   }
 
-  .page-footer__academy-link::before {
-    right: -6px;
-    bottom: -6px;
-  }
-
   .page-footer__academy-link {
-    padding-right: 51px;
-    top: 74px;
-    right: 51px;
+    top: 56px;
+    right: 104px;
     left: auto;
   }
 }
@@ -130,7 +111,7 @@
   }
 
   .page-footer__academy-link {
-    top: 58px;
-    right: 56px;
+    top: 56px;
+    right: 104px;
   }
 }
