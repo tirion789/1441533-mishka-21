@@ -12,37 +12,10 @@
   display: block;
 }
 
-.page-header__toggle {
-  position: absolute;
-  right: 31px;
-  top: 15px;
-  display: block;
-  width: 20px;
-  height: 14px;
-  border: none;
-  cursor: pointer;
-  background-color: inherit;
-}
-
-.page-header__toggle::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background-color: #000000;
-  left: 0;
-  top: 0;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0  #000000;
-}
-
 @media (min-width: $tablet-width) {
   .main-navigation__wrapper {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 
   .main-navigation {

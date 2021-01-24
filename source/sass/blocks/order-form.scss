@@ -97,6 +97,7 @@
 .order-form__radio-label {
   padding: 20px 30px 0 61px;
   position: relative;
+  height: 39px;
 
   &::before {
     content: "";
@@ -178,6 +179,7 @@
 
   .order-form__radio-label {
     padding: 9px 110px 48px 74px;
+    height: auto;
 
     &::before {
       left: -3px;
