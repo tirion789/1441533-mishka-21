@@ -6,6 +6,9 @@
 
 .catalog-video__footer-button {
   width: 192px;
+  font-size: 18px;
+  line-height: 16px;
+  padding-bottom: 15px;
 }
 
 .catalog-video__header {
@@ -14,6 +17,7 @@
 
 .catalog-video__content {
   display: flex;
+  position: relative;
 }
 
 .catalog-video__title {
@@ -39,6 +43,7 @@
 .catalog-video__footer {
   border: 1px solid #ececec;
   padding: 34px;
+  padding-top: 29px;
 }
 
 .catalog-video__text {
@@ -49,13 +54,19 @@
   margin-bottom: 41px;
 }
 
+.catalog-video__play {
+  position: absolute;
+  left: 30.5%;
+  top: 24%;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-video {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 50px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
     display: flex;
     flex-direction: column;
     margin-top: 53px;
@@ -72,17 +83,18 @@
     line-height: 24px;
     padding-bottom: 0;
     padding-left: 105px;
-    padding-top: 50px;
+    padding-top: 24px;
 
     &::before {
       left: 41px;
-      top: 46px;
+      top: 20px;
     }
   }
 
   .catalog-video__header {
     order: 2;
     border-bottom: none;
+    margin-top: 5px;
   }
 
   .catalog-video__footer {
@@ -90,6 +102,13 @@
     border-top: none;
     padding: 40px;
     padding-top: 24px;
+    padding-bottom: 47px;
+  }
+
+  .catalog-video__play {
+    position: absolute;
+    left: 42%;
+    top: 40%;
   }
 
   .catalog-video__footer-button {
@@ -97,8 +116,7 @@
   }
 
   .catalog-video__content {
-    background-color: aqua;
-    height: 445px;
+    min-height: 445px;
   }
 }
 
@@ -116,6 +134,7 @@
   .catalog-video__header {
     width: 366px;
     margin-left: auto;
+    margin-top: 0;
   }
 
   .catalog-video__title {
@@ -123,7 +142,7 @@
     padding-right: 23px;
     padding-left: 80px;
     width: 178px;
-    padding-top: 96px;
+    padding-top: 92px;
   }
 
   .catalog-video__content {

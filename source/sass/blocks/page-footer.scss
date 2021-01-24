@@ -4,20 +4,17 @@
 
 .page-footer__list {
   @include list-unstyled;
-  padding-top: 29px;
+  padding-top: 21px;
   display: flex;
-  padding-left: 60px;
+  padding-left: 0;
   position: relative;
+  justify-content: center;
+  border-bottom: 1px #e5e5e5 solid;
+  padding-bottom: 20px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: #e5e5e5;
-    height: 1px;
-    width: 260px;
-    bottom: 5px;
-    left: 6px;
-  }
+.page-footer__list li {
+  margin: 0 10px;
 }
 
 .page-footer__academy-link {
@@ -38,11 +35,23 @@
 
 .page-footer__logo {
   display: none;
+
+  & svg:hover {
+    fill: #46c1ae;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__link {
   position: relative;
-  margin-right: 60px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .page-footer__link svg:hover {
@@ -80,11 +89,11 @@
 
   .page-footer__list {
     display: flex;
-    width: 139px;
+    width: 162px;
     justify-content: space-between;
     padding: 0;
-    padding-top: 57px;
-    padding-left: 118px;
+    padding-top: 49px;
+    margin-left: 15%;
   }
 
   .page-footer__academy-link {
@@ -105,9 +114,9 @@
   }
 
   .page-footer__list {
-    margin-left: 29.5%;
+    margin-left: 27.5%;
     padding-left: 0%;
-    padding-top: 57px;
+    padding-top: 50px;
   }
 
   .page-footer__academy-link {

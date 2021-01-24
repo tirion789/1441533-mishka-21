@@ -14,6 +14,10 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.jpg");
   background-position: 50% -15%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+  }
 }
 
 .intro__list {

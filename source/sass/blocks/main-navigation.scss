@@ -9,7 +9,7 @@
 }
 
 .main-navigation {
-  display: none;
+  display: block;
 }
 
 .page-header__toggle {
@@ -70,5 +70,9 @@
     max-width: 1150px;
     margin: 0 auto;
     display: block;
+  }
+
+  .main-navigation__text {
+    padding-right: 50px;
   }
 }

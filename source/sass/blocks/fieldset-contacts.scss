@@ -13,6 +13,7 @@
 .fieldset-contacts__svg {
   position: absolute;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .fieldset-contacts__svg--email {
@@ -33,7 +34,7 @@
   }
 
   .fieldset-contacts {
-    height: 228px;
+    min-height: 228px;
     margin-top: 22px;
   }
 
@@ -55,7 +56,7 @@
   }
 
   .fieldset-contacts {
-    height: 228px;
+    min-height: 228px;
   }
 
   .fieldset-contacts__item {

@@ -49,8 +49,10 @@
 }
 
 .contacts__button {
-  margin-top: 34px;
+  margin-top: 36px;
   margin-bottom: 39px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .contacts__item {
@@ -134,7 +136,7 @@
   }
 
   .contacts {
-    margin-top: 198px;
+    margin-top: 152px;
 
     &::before {
       height: 17px;
@@ -193,7 +195,7 @@
   }
 
   .contacts {
-    margin-top: 290px;
+    margin-top: 198px;
     margin-bottom: 105px;
     position: relative;
 
@@ -220,6 +222,7 @@
 
   .contacts__link {
     margin-left: 25px;
+    padding-bottom: 9px;
   }
 
   .contacts__item:first-child {

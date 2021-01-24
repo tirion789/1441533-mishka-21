@@ -6,23 +6,32 @@
 .page-header__logo {
   display: block;
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 22px;
-}
+  margin-top: 25px;
+  margin-bottom: 13px;
+  pointer-events: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     position: absolute;
     margin: 0;
     left: 50px;
-    top: 30px;
+    top: 22px;
+    pointer-events: all;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    margin: 0;
-    margin-left: 50%;
+    left: 46%;
+    top: 9px;
   }
 }
