@@ -25,7 +25,7 @@
     display: flex;
     align-items: flex-start;
     margin-top: 28px;
-    min-height: 304px;
+    min-height: 228px;
   }
 
   .fieldset-color__title {
@@ -67,11 +67,12 @@
   }
 
   .fieldset-color__title {
-    padding-top: 63px;
+    padding-top: 68px;
   }
 
   .fieldset-color {
     min-height: 228px;
     box-sizing: border-box;
+    margin-top: 20px;
   }
 }
