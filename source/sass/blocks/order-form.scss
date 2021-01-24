@@ -143,13 +143,12 @@
     margin: -11px 23px 0 0;
     padding: 0;
     border: 2px solid #444444;
-    left: 0px;
+    left: 0;
     top: 11px;
   }
 }
 
 .order-form__checkbox {
-
   &:checked + label::after {
     content: "";
     position: absolute;
@@ -175,7 +174,7 @@
     left: 13px;
     width: 18px;
     height: 18px;
-}
+  }
 
   .order-form__radio-label {
     padding: 9px 110px 48px 74px;
