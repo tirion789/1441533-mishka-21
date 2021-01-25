@@ -8,17 +8,18 @@
   @include list-unstyled;
 }
 
+.main-navigation {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .main-navigation__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main-navigation__toggle {
-    display: none;
-  }
-
   .main-navigation {
+    display: block;
     max-width: 1150px;
     padding: 0 50px;
   }
@@ -33,6 +34,7 @@
     margin-top: 20px;
     margin-bottom: -20px;
     width: 231px;
+    z-index: 2;
   }
 }
 
@@ -40,5 +42,24 @@
   .main-navigation {
     max-width: 1150px;
     margin: 0 auto;
+    display: block;
+  }
+
+  .main-navigation__text {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-navigation--closed .site-list__item {
+    display: none;
+  }
+
+  .main-navigation--closed .user-list__item {
+    display: none;
+  }
+
+  .main-navigation--nojs .page-header__toggle {
+    display: none;
   }
 }

@@ -4,6 +4,17 @@
 
 .page-footer__list {
   @include list-unstyled;
+  padding-top: 21px;
+  display: flex;
+  padding-left: 0;
+  position: relative;
+  justify-content: center;
+  border-bottom: 1px #e5e5e5 solid;
+  padding-bottom: 20px;
+}
+
+.page-footer__list li {
+  margin: 0 10px;
 }
 
 .page-footer__academy-link {
@@ -11,45 +22,105 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 1.2;
+  position: absolute;
+  top: 111px;
+  left: 70px;
 }
 
 .page-footer__wrapper {
   @include container;
+  height: 160px;
+  position: relative;
 }
 
 .page-footer__logo {
   display: none;
+
+  & svg:hover {
+    fill: #46c1ae;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link {
+  position: relative;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__link svg:hover {
+  fill: #46c1ae;
+}
+
+.page-footer__link svg:active {
+  opacity: 0.3;
+}
+
+.page-footer__svg {
+  position: absolute;
+  right: -54px;
+  top: -5px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
+    padding-top: 50px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
     padding: 0 50px;
     box-sizing: border-box;
-    padding-top: 51px;
-    padding-bottom: 58px;
+    height: 143px;
   }
 
   .page-footer__list {
     display: flex;
-    width: 139px;
+    width: 162px;
     justify-content: space-between;
+    padding: 0;
+    padding-top: 49px;
+    margin-left: 15%;
+  }
+
+  .page-footer__academy-link {
+    top: 56px;
+    right: 104px;
+    left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__logo {
     display: block;
+    padding-top: 51px;
   }
 
   .page-footer__wrapper {
     max-width: 1150px;
+  }
+
+  .page-footer__list {
+    margin-left: 27.5%;
+    padding-left: 0%;
+    padding-top: 50px;
+  }
+
+  .page-footer__academy-link {
+    top: 56px;
+    right: 104px;
   }
 }

@@ -20,6 +20,15 @@
 
   .product-list__item {
     display: flex;
+    margin-top: 80px;
+
+    &:nth-child(2n) {
+      margin-top: 56px;
+    }
+
+    &:nth-child(3n) {
+      margin-top: 52px;
+    }
   }
 }
 
@@ -35,5 +44,14 @@
 
   .product-list__item {
     flex-direction: column;
+    margin-top: 130px;
+
+    &:nth-child(2n) {
+      margin-top: 130px;
+    }
+
+    &:nth-child(3n) {
+      margin-top: 130px;
+    }
   }
 }

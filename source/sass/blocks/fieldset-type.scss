@@ -29,7 +29,7 @@
   }
 
   .fieldset-type__list {
-    margin: 0 auto;
+    margin-left: 26%;
     margin-top: -30px;
     font-size: 19px;
     line-height: 18px;
@@ -38,6 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .fieldset-type__list {
-    margin-left: 189px;
+    margin-left: 181px;
+    margin-top: -32px;
   }
 }

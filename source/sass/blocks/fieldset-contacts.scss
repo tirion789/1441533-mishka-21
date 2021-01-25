@@ -1,21 +1,54 @@
 .fieldset-contacts__item {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 100%;
   margin-bottom: 34px;
+  position: relative;
 }
 
+.fieldset-contacts {
+  margin-top: 16px;
+}
+
+.fieldset-contacts__svg {
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.fieldset-contacts__svg--email {
+  right: 3px;
+  top: 37px;
+}
+
+.fieldset-contacts__svg--telephone {
+  right: 7px;
+  top: 31px;
+}
 
 @media (min-width: $tablet-width) {
   .fieldset-contacts__item {
     flex-direction: row;
-    width: 668px;
+    width: 100%;
+    margin-bottom: 39px;
   }
 
   .fieldset-contacts {
-    height: 228px;
+    min-height: 228px;
+    margin-top: 8px;
+  }
+
+  .fieldset-contacts__svg--telephone {
+    right: 25px;
+    top: -5px;
+  }
+
+  .fieldset-contacts__svg--email {
+    right: 21px;
+    top: 0;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .fieldset-contacts__container {
@@ -23,10 +56,21 @@
   }
 
   .fieldset-contacts {
-    height: 228px;
+    min-height: 228px;
+    margin-top: 9px;
   }
 
   .fieldset-contacts__item {
-    width: 934px;
+    width: 83.7%;
+  }
+
+  .fieldset-contacts__svg--telephone {
+    right: 10px;
+    top: -6px;
+  }
+
+  .fieldset-contacts__svg--email {
+    right: 6px;
+    top: -1px;
   }
 }

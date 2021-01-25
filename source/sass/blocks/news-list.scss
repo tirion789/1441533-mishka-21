@@ -34,15 +34,19 @@
     max-height: 0;
     align-items: flex-start;
     width: 486px;
+    z-index: 2;
   }
 
   .news-list__item {
+    width: 170px;
+    padding-top: 20px;
     box-shadow: none;
-    padding: 20px 62px 25px 0;
-    width: inherit;
+    padding-left: 50px;
   }
 
   .news-list__link {
     padding: 0;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
