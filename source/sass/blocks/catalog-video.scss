@@ -83,18 +83,18 @@
     line-height: 24px;
     padding-bottom: 0;
     padding-left: 105px;
-    padding-top: 24px;
+    padding-top: 45px;
 
     &::before {
       left: 41px;
-      top: 20px;
+      top: 41px;
     }
   }
 
   .catalog-video__header {
     order: 2;
     border-bottom: none;
-    margin-top: 5px;
+    margin-top: -9px;
   }
 
   .catalog-video__footer {
@@ -113,6 +113,7 @@
 
   .catalog-video__footer-button {
     width: 584px;
+    font-size: 17px;
   }
 
   .catalog-video__content {
@@ -133,16 +134,16 @@
 
   .catalog-video__header {
     width: 366px;
-    margin-left: auto;
+    padding-left: 682px;
     margin-top: 0;
   }
 
   .catalog-video__title {
     padding-bottom: 0;
     padding-right: 23px;
-    padding-left: 80px;
+    padding-left: 79px;
     width: 178px;
-    padding-top: 92px;
+    padding-top: 97px;
   }
 
   .catalog-video__content {
@@ -175,6 +176,6 @@
 
   .catalog-video__title::before {
     left: 78px;
-    top: 46px;
+    top: 45px;
   }
 }

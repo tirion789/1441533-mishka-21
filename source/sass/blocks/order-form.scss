@@ -272,7 +272,7 @@
   }
 
   .order-form__container {
-    padding-top: 55px;
+    padding-top: 66px;
   }
 
   .order-form {
@@ -288,15 +288,19 @@
     margin: -11px 23px 0 0;
     padding: 0;
     border: 2px solid #444444;
-    left: -20px;
-    top: 5px;
+    left: 18px;
+    top: 16px;
     bottom: 9px;
   }
 
   .order-form__checkbox:checked + label::after {
-    left: -11px;
-    top: 9px;
+    left: 26px;
+    top: 21px;
     width: 31px;
+  }
+
+  .order-form__checkbox-label {
+    padding: 20px 0 12px 99px;
   }
 }
 

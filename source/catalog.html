@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -228,35 +228,41 @@
       </a>
     </div>
   </footer>
-  <div class="modal-cart">
-    <div class="modal-cart__wrapper">
-      <h2 class="modal-cart__title">
-        Добавить в корзину
-      </h2>
-      <p class="modal-cart__text">
-        Выберите размер:
-      </p>
+  <div class="overlay overlay--show">
+    <div class="modal-cart">
+      <div class="modal-cart__wrapper">
+        <h2 class="modal-cart__title">
+          Добавить в корзину
+        </h2>
+        <p class="modal-cart__text">
+          Выберите размер:
+        </p>
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="form-size">
+        <ul class="form-size__wrapper">
+          <li class="form-size__checkbox">
+            <input type="radio" name="size" id="small-field" value="small-size" checked="checked"
+              class="visually-hidden form-size__control">
+            <label for="small-field" class="form-size__label-size">S</label>
+          </li>
+          <li class="form-size__checkbox">
+            <input type="radio" name="size" id="medium-field" value="medium-size"
+              class="visually-hidden form-size__control">
+            <label for="medium-field" class="form-size__label-size">M</label>
+          </li>
+          <li class="form-size__checkbox">
+            <input type="radio" name="size" id="large-field" value="large-size"
+              class="visually-hidden form-size__control">
+            <label for="large-field" class="form-size__label-size">L</label>
+          </li>
+        </ul>
+        <button class="button form-size__button" type="submit">
+          Добавить
+        </button>
+      </form>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="POST" class="form-size">
-      <ul class="form-size__wrapper">
-        <li class="form-size__checkbox">
-          <input type="checkbox" name="small" id="small-field" value="small-size" checked class="visually-hidden checkbox__control">
-          <label for="small-field" class="checkbox__label-size">S</label>
-        </li>
-        <li  class="form-size__checkbox">
-          <input type="checkbox" name="medium" id="medium-field" value="medium-size"  class="visually-hidden checkbox__control">
-          <label for="medium-field" class="checkbox__label-size">M</label>
-        </li>
-        <li  class="form-size__checkbox">
-          <input type="checkbox" name="large" id="large-field" value="large-size"  class="visually-hidden checkbox__control">
-          <label for="large-field" class="checkbox__label-size">L</label>
-        </li>
-      </ul>
-      <button class="button form-size__button" type="submit">
-        Добавить
-      </button>
-    </form>
   </div>
+  <script src="js/script.min.js" type="text/javascript"></script>
 </body>
 
 </html>
