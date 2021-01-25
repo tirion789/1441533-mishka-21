@@ -30,6 +30,7 @@
 
 .order-form__input {
   @include order-input;
+  font-family: inherit;
 }
 
 .order-form__input::placeholder {
@@ -87,11 +88,16 @@
 }
 
 .order-form__checkbox-label:hover::before {
-  border-color: #62d1b6;
+  border-color: #62D1BA
 }
 
 .order-form__radio-label:hover::before {
-  border-color: #62d1b6;
+  border-color: #62D1BA;
+}
+
+.order-form__radio-label:active::before,
+.order-form__checkbox-label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-form__radio-label {

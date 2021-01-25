@@ -6,8 +6,9 @@
   bottom: 0;
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.9);
+  display: none;
 
   &--show {
-    display: none;
+    display: block;
   }
 }

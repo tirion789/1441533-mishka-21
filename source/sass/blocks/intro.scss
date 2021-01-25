@@ -40,14 +40,32 @@
   }
 }
 
+.intro__link:hover path {
+  opacity: 0.7;
+}
+
+.intro__link:active path {
+  opacity: 0.3;
+}
+
 .intro__link--interior {
   background-color: $basic-green-lower;
   position: relative;
+
+  &:hover,
+  &:active {
+    background-color: #59D5BC;
+  }
 }
 
 .intro__link--toys {
   background-color: $basic-green-aqua;
   position: relative;
+
+  &:hover,
+  &:active {
+    background-color: #46C1AE;
+  }
 }
 
 .intro__link span {

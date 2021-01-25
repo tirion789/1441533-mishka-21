@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
 </head>
 
 <body class="page-body">
@@ -78,7 +80,7 @@
         <h1 class="page-content__title">Каталог товаров</h1>
       </div>
       <ul class="product-list">
-        <li class="product-list__item product-card">
+        <li class="product-list__item product-cardjs-button">
           <a href="#" class="product-card__img">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-catalog-desktop.jpg 1x, img/photo-catalog-desktop@2x.jpg 2x">
@@ -94,7 +96,7 @@
             </h2>
             <p class="product-card__text">Рост 30см, вес 200г</p>
             <span class="product-card__price">1 200 руб.</span>
-            <a href="#" class="product-card__cart-link">
+            <a href="#" class="product-card__cart-link js-button">
               <svg class="product-card__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
                 <path  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
                 </svg>
@@ -117,7 +119,7 @@
           </h2>
           <p class="product-card__text">Диаметр 15 см, высота 10 см</p>
           <span class="product-card__price">690 руб.</span>
-          <a href="#" class="product-card__cart-link">
+          <a href="#" class="product-card__cart-link js-button">
             <svg class="product-card__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
               <path  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
               </svg>
@@ -140,7 +142,7 @@
           </h2>
           <p class="product-card__text">Диаметр 30 см, высота 30 см</p>
           <span class="product-card__price">1 500 руб.</span>
-          <a href="#" class="product-card__cart-link">
+          <a href="#" class="product-card__cart-link js-button">
             <svg class="product-card__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
               <path  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
               </svg>
@@ -228,39 +230,38 @@
       </a>
     </div>
   </footer>
-  <div class="overlay overlay--show">
-    <div class="modal-cart">
-      <div class="modal-cart__wrapper">
-        <h2 class="modal-cart__title">
-          Добавить в корзину
-        </h2>
-        <p class="modal-cart__text">
-          Выберите размер:
-        </p>
-      </div>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="form-size">
-        <ul class="form-size__wrapper">
-          <li class="form-size__checkbox">
-            <input type="radio" name="size" id="small-field" value="small-size" checked="checked"
-              class="visually-hidden form-size__control">
-            <label for="small-field" class="form-size__label-size">S</label>
-          </li>
-          <li class="form-size__checkbox">
-            <input type="radio" name="size" id="medium-field" value="medium-size"
-              class="visually-hidden form-size__control">
-            <label for="medium-field" class="form-size__label-size">M</label>
-          </li>
-          <li class="form-size__checkbox">
-            <input type="radio" name="size" id="large-field" value="large-size"
-              class="visually-hidden form-size__control">
-            <label for="large-field" class="form-size__label-size">L</label>
-          </li>
-        </ul>
-        <button class="button form-size__button" type="submit">
-          Добавить
-        </button>
-      </form>
+  <div class="overlay"></div>
+  <div class="modal-cart">
+    <div class="modal-cart__wrapper">
+      <h2 class="modal-cart__title">
+        Добавить в корзину
+      </h2>
+      <p class="modal-cart__text">
+        Выберите размер:
+      </p>
     </div>
+    <form action="https://echo.htmlacademy.ru" method="POST" class="form-size">
+      <ul class="form-size__wrapper">
+        <li class="form-size__checkbox">
+          <input type="radio" name="size" id="small-field" value="small-size" checked="checked"
+            class="visually-hidden form-size__control">
+          <label for="small-field" class="form-size__label-size">S</label>
+        </li>
+        <li class="form-size__checkbox">
+          <input type="radio" name="size" id="medium-field" value="medium-size"
+            class="visually-hidden form-size__control">
+          <label for="medium-field" class="form-size__label-size">M</label>
+        </li>
+        <li class="form-size__checkbox">
+          <input type="radio" name="size" id="large-field" value="large-size"
+            class="visually-hidden form-size__control">
+          <label for="large-field" class="form-size__label-size">L</label>
+        </li>
+      </ul>
+      <button class="button form-size__button" type="submit">
+        Добавить
+      </button>
+    </form>
   </div>
   <script src="js/script.min.js" type="text/javascript"></script>
 </body>
