@@ -15,16 +15,16 @@
   background-color: inherit;
 }
 
-.page-header__toggle::before {
+.page-header__toggle--opened::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 2px;
   background-color: #000000;
-  left: 0;
   top: 0;
+  right: 0;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0  #000000;
-  display: none;
+  display: block;
 }
 
 .page-header__toggle--closed {
